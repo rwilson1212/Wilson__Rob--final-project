@@ -28,7 +28,7 @@ const Contact = () => {
     }
 
     return (
-        <div className="containerMain">
+        <Container>
             <Card className="text-white bg-secondary my-5 py-4 text-center">
                 <CardBody>
                     <CardText className="text-white m-0">Use form to reach me, I'll get back to you within 24 hours!</CardText>
@@ -66,7 +66,7 @@ const Contact = () => {
                     </Col>
                 </FormGroup>
             </Form>
-        </div>
+        </Container>
       )
     }
 

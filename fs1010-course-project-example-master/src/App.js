@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import Navigation from './components/shared/Navigation'
-import Footer from './components/shared/footer'
+//import Footer from './components/shared/footer'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './components/pages/Home'
 import About from './components/pages/About'
@@ -23,7 +23,6 @@ function App() {
             <Listing />
           </PrivateRoute>
         </Switch>
-        <Footer />  
     </BrowserRouter>
   )
 }
