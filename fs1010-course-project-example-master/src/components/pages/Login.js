@@ -32,7 +32,8 @@ const Login = () => {
     }
 
     return (
-        <Container>
+        <main className="containerMain">
+          <div className="contentMain">
         {!auth && 
             <Card className="text-white bg-primary my-5 py-4 text-center">
             <CardBody>
@@ -56,7 +57,9 @@ const Login = () => {
             </Col>
           </Row>
           <Button color="success">Sign in</Button>
-        </Form></Container>
+        </Form>
+        </div>
+        </main>
     )
 }
 

@@ -7,6 +7,8 @@ import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Contact from './components/pages/Contact'
 import Login from './components/pages/Login'
+import Projects from './components/pages/Projects'
+import Resume from './components/pages/Resume'
 import Listing from './components/pages/Listing'
 import PrivateRoute from './components/shared/PrivateRoute'
 
@@ -19,6 +21,8 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/resume" component={Resume} />
           <PrivateRoute path="/submissions">
             <Listing />
           </PrivateRoute>

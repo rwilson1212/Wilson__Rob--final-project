@@ -3,9 +3,11 @@ import { Container, Row, Col, Button, CardBody, CardTitle, CardText, CardFooter,
 
 const Home = () => {
     return(
-        <div className="containerMain">
+        <main className="containerMain">
+            <div className="contentMain">
             <p>test content</p>
-        </div>
+            </div>
+        </main>
     )
 }
 

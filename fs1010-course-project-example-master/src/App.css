@@ -18,8 +18,20 @@ html,body,#root, .App {
     }
 
   .robImg{
-    height: 170px;
+    height: 220px;
     }
+    
+  .mainHr{
+    width: 35%;
+    border: 12px;
+    border-color: goldenrod;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: dotted;
+    margin-top: 10px;
+    }
+  
 
   .sideBarNav{
     height: 100%;
@@ -34,9 +46,31 @@ html,body,#root, .App {
     font-family:'Montserrat', sans-serif;;
   }
 
+  .linksTable{
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: left;
+    border-collapse: collapse;
+    font-size: x-large;
+    }
+
+    .navImg {  /* change the color of images in links*/
+      -webkit-filter: brightness(0) invert(1);
+      filter: brightness(0) invert(1);
+      padding-right: .5rem;
+    }
+  
+
+  .navLinks:hover{
+    background-color: grey;
+    }
+
+
   .containerMain{
     height: 100%;
-    width:75%;
+    width: 75%;
     background-color:lightblue;
     float: right;
     margin: 0;
@@ -48,13 +82,10 @@ html,body,#root, .App {
     letter-spacing: .5px;
     }
 
-    .linksTable{
-      margin-top: 2rem;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 10px;
-      text-align: left;
-      border-collapse: collapse;
-      font-size: x-large;
+    .contentMain{
+      width: 90%;
+      height: 85%;
+      margin:4rem auto;
+      background-color: lightskyblue;
       }
   

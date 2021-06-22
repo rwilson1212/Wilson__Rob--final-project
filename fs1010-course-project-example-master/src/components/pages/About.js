@@ -3,7 +3,8 @@ import { Container, Row, Col, Button } from 'reactstrap'
 
 const About = () => {
     return (
-        <Container>
+        <main className="containerMain">
+        <div className="contentMain">
         <Row className="my-5">
             <Col lg="7">
                 <img className="img-fluid rounded mb-4 mb-lg-0" src="http://placehold.it/900x400" alt="" />
@@ -14,7 +15,8 @@ const About = () => {
                 <Button color="primary" href="/contact">Contact Me</Button>
             </Col>
         </Row>
-    </Container>
+        </div>
+    </main>
     )
 }
 

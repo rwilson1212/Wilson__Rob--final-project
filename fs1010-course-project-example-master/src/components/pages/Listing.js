@@ -28,7 +28,8 @@ const Listings = () => {
         getData()
     }, [token])
     return (
-        <Container>
+        <main className="containerMain">
+            <div className="contentMain">
             <Row>
                 <h1>Listings for user: {user}</h1>
             </Row>
@@ -53,7 +54,8 @@ const Listings = () => {
         <Row className="my-5">
             <Button onClick={logout} color="primary">Logout</Button>
         </Row>
-        </Container>
+        </div>
+        </main>
     )
 }
 
