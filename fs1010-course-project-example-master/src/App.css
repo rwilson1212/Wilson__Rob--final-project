@@ -46,6 +46,21 @@ html,body,#root, .App {
     font-family:'Montserrat', sans-serif;;
   }
 
+  .socialMediaContainer{
+    padding-bottom: .5rem;
+ }
+
+ .socialMediaLink{    /*social media icons*/
+    margin: 6px;
+ }
+
+
+  .socialMedImage:hover{
+    -webkit-transform: scale(1.3); 
+    transform: scale(1.3); 
+  }
+
+
   .linksTable{
     margin-top: 2rem;
     margin-left: auto;
@@ -64,8 +79,14 @@ html,body,#root, .App {
   
 
   .navLinks:hover{
-    background-color: grey;
+    background-color: gray;
     }
+
+  .footerContent{
+    padding-top: 9.5rem;
+    font-size: small;
+    color:lightgray;
+  }
 
 
   .containerMain{

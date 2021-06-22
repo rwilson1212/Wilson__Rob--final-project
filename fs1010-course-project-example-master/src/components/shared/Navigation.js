@@ -27,6 +27,11 @@ const Navigation = () => {
                 <h1>Rob Wilson 😎</h1>
                 <h2>Aspiring Web Developer</h2>
             </div>
+            <div className="socialMediaContainer">
+                <a className="socialMediaLink" href="https://www.facebook.com/" target="_blank"><img className="socialMedImage" src={fb} alt="Connect on Facebook" width={30} /></a>
+                <a className="socialMediaLink" href="https://www.instagram.com/?hl=en" target="_blank"><img className="socialMedImage" src={ig} alt="Connect on Instagram" width={30} /></a>
+                <a className="socialMediaLink" href="https://twitter.com/?lang=en" target="_blank"><img className="socialMedImage" src={tw} alt="Connect on Twitter" width={30} /></a>
+            </div>
             <hr className="mainHr"></hr>
                     <Nav>
                     <table className="linksTable">
@@ -36,7 +41,7 @@ const Navigation = () => {
                     </NavItem>
                     </tr>
                     <NavItem className="navLinks">
-                        <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/about"><img className="navImg" src={home}></img>About Me</NavLink>
+                        <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/about"><img className="navImg" src={idea}></img>About Me</NavLink>
                     </NavItem>
                     <NavItem className="navLinks">
                         <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/projects"><img className="navImg" src={laptop}></img>Projects</NavLink>
@@ -53,12 +58,14 @@ const Navigation = () => {
                     </table>
                 </Nav>
             
-            
+                <footer className="footerContent">Copyright &copy; 2021 Rob Wilson </footer>
         </Navbar>
           
          
       </nav>
+      
     </header>
+    
   );
     
 }
