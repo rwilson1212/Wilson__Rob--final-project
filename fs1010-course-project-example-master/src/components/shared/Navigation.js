@@ -58,7 +58,7 @@ const Navigation = () => {
                     </table>
                 </Nav>
             
-                <footer className="footerContent">Copyright &copy; 2021 Rob Wilson </footer>
+                <footer className="footerContent">&copy; 2021 Rob Wilson </footer>
         </Navbar>
           
          

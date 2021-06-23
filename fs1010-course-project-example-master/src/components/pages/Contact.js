@@ -18,6 +18,8 @@ const Contact = () => {
                 'Content-Type': 'application/json'
               },
             body: JSON.stringify({name, email, phoneNumber, content})
+            
+
         })
         const payload = await response.json()
         if (response.status >= 400) {
@@ -25,6 +27,11 @@ const Contact = () => {
         } else {
             alert(`Congrats! Submission submitted with id: ${payload.id}`)
         }
+
+        setName("");
+        setEmail("");
+        setPhoneNumber("");
+        setContent("");
     }
 
     return (
@@ -63,7 +70,7 @@ const Contact = () => {
                 </FormGroup>
                 <FormGroup check row>
                     <Col sm={{ size: 10, offset: 2 }}>
-                    <Button color="success">Submit</Button>
+                    <Button color="warning">Submit</Button>
                     </Col>
                 </FormGroup>
             </Form>
