@@ -85,7 +85,7 @@ html,body,#root, .App {
   .footerContent{
     padding-top: 9.5rem;
     font-size: small;
-    color:lightgray;
+    color:grey;
   }
 
 
@@ -110,3 +110,29 @@ html,body,#root, .App {
       background-color: lightskyblue;
       }
   
+    .my-5{
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      background-color: #fff;
+      width: 50%;
+      margin: 0 auto;
+      padding-top:50px;
+      padding-bottom:50px;
+    }
+
+    .field{
+      display: inline-block;
+      width: 350px;
+      position: relative;
+      left: 30%; 
+      
+
+    }
+    
+    .field:hover{
+      border: 2px solid #aaa;
+      
+
+    }
+
+   

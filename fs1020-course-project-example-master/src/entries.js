@@ -15,7 +15,7 @@ const validateEntries = (req, res, next) => {
             invalid.push(property)
         }
     }
-    const requiredProperties = ["name", "email", "phoneNumber", "content"]
+    const requiredProperties = ["name", "email", "phoneNumber", "content", "feedback"]
     requiredProperties.filter(prop => !body.hasOwnProperty(prop)).forEach(key => invalid.push(key))
     if (invalid.length > 0) {
         return res.status(400).send({message: "validation error", invalid})

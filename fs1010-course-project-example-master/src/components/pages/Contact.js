@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Form, FormGroup, Col, Input, Label, Button, Container, CardBody, Card, CardText } from 'reactstrap'
+import { Alert, Form, FormGroup, Col, Input, Label, Button, Container, CardBody, Card, CardText } from 'reactstrap'
+import {Field as FField} from 'formik'
 
 
 
@@ -21,6 +22,10 @@ const Contact = () => {
             
 
         })
+
+        
+
+
         const payload = await response.json()
         if (response.status >= 400) {
             alert(`Oops! Error: ${payload.message} for fields: ${payload.invalid.join(",")}`)
@@ -44,28 +49,27 @@ const Contact = () => {
             </Card>
             <Form className="my-5" onSubmit={formSubmit}>
                 <FormGroup row>
-                    <Label for="emailEntry" sm={2}>Email</Label>
-                    <Col sm={10}>
-                    <Input type="email" name="email" id="emailEntry" placeholder="Enter email to contact"  required value={email} onChange={e => setEmail(e.target.value) }/>
+                    <Label for="emailEntry" sm={2} hidden>Email</Label>
+                    <Col sm={8}>
+                    <Input className="field" type="email" name="email" id="emailEntry" placeholder="Enter email to contact" bsSize="lg" required value={email} onChange={e => setEmail(e.target.value) }/>
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label for="phoneEntry" sm={2}>Phone Number</Label>
-                    <Col sm={10}>
-                    <Input type="phone" name="phone" id="phoneEntry" placeholder="Enter phone number" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}/>
+                    <Label for="phoneEntry" sm={2} hidden>Phone Number</Label>
+                    <Col sm={8}>
+                    <Input  className="field" type="phone" name="phone" id="phoneEntry" placeholder="Enter phone number" bsSize="lg" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}/>
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label for="nameEntry" sm={2}>Full Name</Label>
-                    <Col sm={10}>
-                    <Input type="name" name="name" id="nameEntry" placeholder="Enter your full name" required value={name} onChange={e => setName(e.target.value)}/>
+                    <Label for="nameEntry" sm={2} hidden>Full Name</Label>
+                    <Col sm={8}>
+                    <Input  className="field" type="name" name="name" id="nameEntry" placeholder="Enter your full name" bsSize="lg" required value={name} onChange={e => setName(e.target.value)}/>
                     </Col>
                 </FormGroup>
-
                 <FormGroup row>
-                    <Label for="messageEntry" sm={2}>Message</Label>
-                    <Col sm={10}>
-                    <Input type="textarea" name="text" id="messageEntry" required value={content} onChange={e => setContent(e.target.value)}/>
+                    <Label for="messageEntry" sm={2}hidden >Message</Label>
+                    <Col sm={8}>
+                    <Input className="field" type="textarea" name="text" id="messageEntry"placeholder="Message" bsSize="lg" required value={content} onChange={e => setContent(e.target.value)}/>
                     </Col>
                 </FormGroup>
                 <FormGroup check row>

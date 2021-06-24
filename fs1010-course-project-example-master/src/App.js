@@ -8,7 +8,7 @@ import About from './components/pages/About'
 import Contact from './components/pages/Contact'
 import Login from './components/pages/Login'
 import Projects from './components/pages/Projects'
-import Resume from './components/pages/Resume'
+import Resume from './components/pages/Login'
 import Listing from './components/pages/Listing'
 import PrivateRoute from './components/shared/PrivateRoute'
 

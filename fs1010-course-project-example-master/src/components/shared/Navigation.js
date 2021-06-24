@@ -41,10 +41,7 @@ const Navigation = () => {
                     </NavItem>
                     </tr>
                     <NavItem className="navLinks">
-                        <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/about"><img className="navImg" src={idea}></img>About Me</NavLink>
-                    </NavItem>
-                    <NavItem className="navLinks">
-                        <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/projects"><img className="navImg" src={laptop}></img>Projects</NavLink>
+                        <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/resume"><img className="navImg" src={laptop}></img>Projects</NavLink>
                     </NavItem>
                     <NavItem className="navLinks">
                         <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/resume"><img className="navImg" src={file}></img>Resume</NavLink>
