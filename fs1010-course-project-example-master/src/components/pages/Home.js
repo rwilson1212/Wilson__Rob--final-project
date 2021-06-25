@@ -8,6 +8,10 @@ const Home = () => {
             <div className="contentMain">
             <img className="splashImg" src={splash}></img>
             <p className="aboutMe"><strong>I'm Rob,</strong><br></br> an HR professional turned Web Developer. I like to learn things and make stuff.</p>
+            
+  
+
+
             </div>
         </main>
     )

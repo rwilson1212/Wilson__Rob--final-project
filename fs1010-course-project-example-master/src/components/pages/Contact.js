@@ -47,7 +47,7 @@ const Contact = () => {
                     <CardText className="text-white m-0">Use form to reach me, I'll get back to you within 24 hours!</CardText>
                 </CardBody>
             </Card>
-            <Form className="my-5" onSubmit={formSubmit}>
+            <Form className="my-5" className="contactForm" onSubmit={formSubmit}>
                 <FormGroup row>
                     <Label for="emailEntry" sm={2} hidden>Email</Label>
                     <Col sm={8}>
@@ -74,7 +74,7 @@ const Contact = () => {
                 </FormGroup>
                 <FormGroup check row>
                     <Col sm={{ size: 10, offset: 2 }}>
-                    <Button color="warning">Submit</Button>
+                    <Button className="contactButton" color="warning">Submit</Button>
                     </Col>
                 </FormGroup>
             </Form>

@@ -41,11 +41,12 @@ const Navigation = () => {
                     </NavItem>
                     </tr>
                     <NavItem className="navLinks">
-                        <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/resume"><img className="navImg" src={laptop}></img>Projects</NavLink>
+                        <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/about"><img className="navImg" src={file}></img>About</NavLink>
                     </NavItem>
                     <NavItem className="navLinks">
-                        <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/resume"><img className="navImg" src={file}></img>Resume</NavLink>
+                        <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/projects"><img className="navImg" src={laptop}></img>Projects</NavLink>
                     </NavItem>
+                    
                     <NavItem className="navLinks">
                        <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/contact"><img className="navImg" src={envelope}></img>Contact Me</NavLink>
                     </NavItem>
