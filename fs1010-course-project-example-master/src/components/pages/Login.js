@@ -32,8 +32,8 @@ const Login = () => {
     }
 
     return (
-        <main className="containerMain">
-          <div className="contentMain">
+        <main className="containerMainLong">
+          <div className="contentMainLong">
         {!auth && 
             <Card className="text-white bg-primary my-5 py-4 text-center" className="formCardErr">
             <CardBody>
@@ -53,19 +53,23 @@ const Login = () => {
           <Row form>
             <Col md={6}>
               <FormGroup>
-                <Label for="usernameEntry">Username</Label>
-                <Input type="text" name="username" id="usernameEntry" placeholder="Username" value={username} onChange={e => setUsername(e.target.value)}/>
+                <Label for="usernameEntry"></Label>
+                <Input type="text" className="field" name="username" id="usernameEntry" placeholder="Username" bsSize="lg" value={username} onChange={e => setUsername(e.target.value)}/>
               </FormGroup>
             </Col>
+            </Row>
+            <Row>
             <Col md={6}>
               <FormGroup>
-                <Label for="passwordEntry">Password</Label>
-                <Input type="password" name="password" id="passwordEntry" placeholder="Valid password" onChange={e => setPassword(e.target.value)}/>
+                <Label for="passwordEntry"></Label>
+                <Input type="password" className="field" name="password" id="passwordEntry" placeholder="Valid password" bsSize="lg" onChange={e => setPassword(e.target.value)}/>
               </FormGroup>
             </Col>
           </Row>
-          <Button color="success">Sign in</Button>
+          <Button className="loginButton" color="warning"><strong>Sign in</strong></Button>
+          
         </Form>
+        <div className="adminLoginText"> administrator login <span className="loginEmoji">&#128225;</span> </div>
         </div>
         </main>
     )

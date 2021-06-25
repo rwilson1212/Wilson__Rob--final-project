@@ -45,7 +45,7 @@ const Contact = () => {
                 
             <Card className="text-white bg-secondary my-5 py-4 text-center" className="formCard">
                 <CardBody>
-                    <CardText className="text-white m-0" className="formCardText">Use form to reach me, I'll get back to you within 24 hours!</CardText>
+                    <CardText className="text-white m-0" className="formCardText">Use form below to reach out to me</CardText>
                 </CardBody>
             </Card>
             <hr className="mainHr" />
@@ -81,7 +81,7 @@ const Contact = () => {
                 </FormGroup>
             </Form>
             
-            <p className= "contactDirect">you can also contact me directly at <strong>rob@gmail.com</strong></p>
+            <p className= "contactDirect">you can also contact me directly at <span className="myEmail">rob@gmail.com &#128172;</span> </p>
             
             </div>
         </main>

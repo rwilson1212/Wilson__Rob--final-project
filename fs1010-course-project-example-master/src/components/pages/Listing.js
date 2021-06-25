@@ -31,9 +31,11 @@ const Listings = () => {
         <main className="containerMainLong">
             <div className="contentMainLong">
             <Row>
-                <h1>Listings for user: {user}</h1>
+                <h1 className="userHeader"><strong>Listings for user: {user}</strong></h1>
+                <Button onClick={logout} className="logoutButton" color="warning"><strong>Logout</strong></Button>
             </Row>
-            <Table responsive>
+            <hr className="mainHr" />
+            <Table className="listingTable" responsive>
                 <thead>
                     <tr>
                     <th>ID</th>
@@ -52,7 +54,7 @@ const Listings = () => {
                 </tbody>
             </Table>
         <Row className="my-5">
-            <Button onClick={logout} color="primary">Logout</Button>
+            
         </Row>
         </div>
         </main>
