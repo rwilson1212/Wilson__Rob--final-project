@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Alert, Form, FormGroup, Col, Input, Label, Button, Container, CardBody, Card, CardText } from 'reactstrap'
-import {Field as FField} from 'formik'
+
 
 
 
@@ -40,13 +40,15 @@ const Contact = () => {
     }
 
     return (
-        <main className="containerMain">
-            <div className="contentMain">
-            <Card className="text-white bg-secondary my-5 py-4 text-center">
+        <main className="containerMainLong">
+            <div className="contentMainLong">
+                
+            <Card className="text-white bg-secondary my-5 py-4 text-center" className="formCard">
                 <CardBody>
-                    <CardText className="text-white m-0">Use form to reach me, I'll get back to you within 24 hours!</CardText>
+                    <CardText className="text-white m-0" className="formCardText">Use form to reach me, I'll get back to you within 24 hours!</CardText>
                 </CardBody>
             </Card>
+            <hr className="mainHr" />
             <Form className="my-5" className="contactForm" onSubmit={formSubmit}>
                 <FormGroup row>
                     <Label for="emailEntry" sm={2} hidden>Email</Label>
@@ -74,10 +76,13 @@ const Contact = () => {
                 </FormGroup>
                 <FormGroup check row>
                     <Col sm={{ size: 10, offset: 2 }}>
-                    <Button className="contactButton" color="warning">Submit</Button>
+                    <Button className="contactButton" color="warning"><strong>Submit</strong></Button>
                     </Col>
                 </FormGroup>
             </Form>
+            
+            <p className= "contactDirect">you can also contact me directly at <strong>rob@gmail.com</strong></p>
+            
             </div>
         </main>
       )

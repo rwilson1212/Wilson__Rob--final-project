@@ -6,7 +6,7 @@ const Resume = () => {
     return(
         <main className="containerMain">
             <div className="contentMain">
-            <div id="resume">   
+                 <div id="resume">   
         <hr className="mainHr" />  
         <h2 className="contentHeader">Resume</h2>
         <div className="resumeSubContainer">

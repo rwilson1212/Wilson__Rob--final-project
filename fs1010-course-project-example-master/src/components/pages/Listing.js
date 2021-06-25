@@ -28,8 +28,8 @@ const Listings = () => {
         getData()
     }, [token])
     return (
-        <main className="containerMain">
-            <div className="contentMain">
+        <main className="containerMainLong">
+            <div className="contentMainLong">
             <Row>
                 <h1>Listings for user: {user}</h1>
             </Row>

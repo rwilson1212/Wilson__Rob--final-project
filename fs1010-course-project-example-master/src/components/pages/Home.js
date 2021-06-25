@@ -7,11 +7,14 @@ const Home = () => {
         <main className="containerMain">
             <div className="contentMain">
             <img className="splashImg" src={splash}></img>
-            <p className="aboutMe"><strong>I'm Rob,</strong><br></br> an HR professional turned Web Developer. I like to learn things and make stuff.</p>
+                <div className="aboutMe">
+                    <hr className="mainHr" />
+                    <h1 className="myName">I'm Rob,</h1>
+                    <br></br> 
+                    an HR professional turned Web Developer. I like to learn things and make stuff.
+                    
+                </div>
             
-  
-
-
             </div>
         </main>
     )

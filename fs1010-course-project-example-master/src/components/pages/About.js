@@ -6,6 +6,7 @@ import tchc from '../../assets/images/TCHCLogo.png'
 
 
 
+
 const About = () => {
     return (
         <main className="containerMainLong">
@@ -21,11 +22,11 @@ const About = () => {
         <hr className="mainHr" />  
         
         <div className="resumeSubContainer">
-          <h2>Employment History</h2>
+          <h2 className="resumeHeader">Employment History</h2>
           <table>
             <tbody><tr>
                 <td><img className="workLogo" src={prhc} height="115rem" /></td>
-                <td><h4> Total Rewards, HR Systems and Reporting Lead - Human Resources – June 2020 – Present</h4></td>
+                <td><h4 className="resumeHeader"> Total Rewards, HR Systems and Reporting Lead - Human Resources – June 2020 – Present</h4></td>
               </tr>
             </tbody></table>
           <ul>
@@ -43,7 +44,7 @@ const About = () => {
           <table>  
             <tbody><tr>
                 <td><img className="workLogo" src={tchc} height="115rem" /></td>
-                <td><h4>Compensation &amp; Workforce Analytics - Human Resources - December 2016 – May 2020</h4></td>
+                <td><h4 className="resumeHeader">Compensation &amp; Workforce Analytics - Human Resources - December 2016 – May 2020</h4></td>
               </tr>
             </tbody></table>       
           <ul>
@@ -81,28 +82,28 @@ const About = () => {
             <li>Responsible for overseeing and managing the audit and maintenance of HRIS data for completeness,
               accuracy and adherence to HR standards.</li>
           </ul>
-          <h3>Technical Skills</h3>
+          <h3 className="resumeHeader">Technical Skills</h3>
           <ul>
             <li>HR Information Systems: experience with system implementations, designing and troubleshooting
               configurations, creating queries and reports, performing system validations.</li>
             <li>Microsoft Office: advanced skills with PowerPoint, Excel and Word. Experience using pivot tables,
               vlookups, arrays, macros, flat pivot tables, regression analysis.</li>
           </ul>
-          <h3>Education</h3>
+          <h3 className="resumeHeader">Education</h3>
           <ul>
             <li>2011 - 2012 Post-Grad. Certificate, Human Resources Management
               - Humber College, Lakeshore</li>
             <li>2006 - 2010 Honours B.A, Criminology, Political Science
               - University of Toronto, St. George</li>
           </ul>
-          <h4>Continuing Education</h4>
+          <h4 className="resumeHeader">Continuing Education</h4>
           <ul>
             <li>2021 Full Stack Development - York School of Continuing Studies</li>
           </ul>
           <br />
         </div>
       </div>
-    );
+    
         </div>
     </main>
     )

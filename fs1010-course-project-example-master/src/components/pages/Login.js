@@ -35,13 +35,21 @@ const Login = () => {
         <main className="containerMain">
           <div className="contentMain">
         {!auth && 
-            <Card className="text-white bg-primary my-5 py-4 text-center">
+            <Card className="text-white bg-primary my-5 py-4 text-center" className="formCardErr">
             <CardBody>
-                <CardText className="text-white m-0">Invalid credentials, please try again</CardText>
+                <CardText className="text-white m-0" className="formCardTextErr">Invalid credentials, please try again</CardText>
             </CardBody>
         </Card>
         }
-        <Form className="my-5" onSubmit={loginSubmit}>
+
+            <Card className="text-white bg-primary my-5 py-4 text-center" className="formCard">
+              <CardBody>
+                  <CardText className="text-white m-0" className="formCardText">Enter credentials below</CardText>
+              </CardBody>
+          </Card>
+
+        <hr className="mainHr" />
+        <Form className="my-5" className="contactForm" onSubmit={loginSubmit}>
           <Row form>
             <Col md={6}>
               <FormGroup>

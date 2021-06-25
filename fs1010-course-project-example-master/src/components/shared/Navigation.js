@@ -32,7 +32,7 @@ const Navigation = () => {
                 <a className="socialMediaLink" href="https://www.instagram.com/?hl=en" target="_blank"><img className="socialMedImage" src={ig} alt="Connect on Instagram" width={30} /></a>
                 <a className="socialMediaLink" href="https://twitter.com/?lang=en" target="_blank"><img className="socialMedImage" src={tw} alt="Connect on Twitter" width={30} /></a>
             </div>
-            <hr className="mainHr"></hr>
+            <hr className="navHr"></hr>
                     <Nav>
                     <table className="linksTable">
                     <tr>
