@@ -1,6 +1,7 @@
 html,body,#root, .App {            
   height: 100%;
   margin: 0;
+  
 }
 
 
@@ -128,7 +129,7 @@ html,body,#root, .App {
     /* Main Container  */ 
     .containerMain{
       height: fit-content;
-      min-height: 952px;
+      min-height: 1009px;
       width: 75%;
       background-color:#E8F0F2;
       float: right;
@@ -200,7 +201,7 @@ html,body,#root, .App {
       position: absolute;
       font-weight: bold;
       bottom: 15rem;
-      left: 50%;
+      left: 60%;
       background-color: goldenrod;
       width: 400px;
       padding: 3rem;
@@ -376,7 +377,7 @@ html,body,#root, .App {
     position: absolute;
     font-weight: bold;
     bottom: 15rem;
-    left: 40%;
+    left: 50%;
     background-color: goldenrod;
     width: 400px;
     padding: 3rem;
@@ -397,6 +398,21 @@ html,body,#root, .App {
   .navText{
     font-size: x-large;
     color: honeydew;
+  }
+
+  .containerMain{
+    height: fit-content;
+    min-height: 1009px;
+    width: 75%;
+    background-color:#E8F0F2;
+    float: right;
+    margin: 0;
+    padding: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family:'Montserrat', sans-serif;;
+    line-height: 1.7rem;
+    letter-spacing: .5px;
   }
   
   .field{
