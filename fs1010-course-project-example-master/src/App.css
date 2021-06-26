@@ -1,34 +1,382 @@
 html,body,#root, .App {            
   height: 100%;
   margin: 0;
-  
 }
 
-/* This is a single-line comment */  
-.mainHr{
-  width: 15%;
-  border: 12px;
-  border-color: #f6f5f5;
-  border-top-style: none;
-  border-left-style: none;
-  border-right-style: none;
-  border-bottom-style: dotted;
-  margin-top: 10px;
-  }
 
-  .splashImg{
-    width: 100% ;
-    margin: 0px;
-    padding: 0px;
+/* App wide */  
+
+    /* Dotted line */ 
+    .mainHr{
+      width: 15%;
+      border: 12px;
+      border-color: #f6f5f5;
+      border-top-style: none;
+      border-left-style: none;
+      border-right-style: none;
+      border-bottom-style: dotted;
+      margin-top: 10px;
+    }
+
+/* Navigation Bar */
+
+    /* Nav Bar Container */
+    .sideBarNav{
+      height: 100%;
+      display: block;
+      background-color:#053742;
+      font-family:Arial, Helvetica, sans-serif ;
+      color: honeydew;
+      width:25%;
+      float: left;
+      text-align: center;
+      position: fixed;
+      font-family:'Montserrat', sans-serif;;
+    }
+
+    /* Image of Rob */
+    .robImg{
+      height: 220px;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    .navHeader1{
+      font-weight: bolder;
+      margin: 1rem;
+    }
+
+    .aspiring{
+        font-size: smaller;
+    }
+
+    /* Nav Dotted Line */ 
+    .navHr{
+      width: 35%;
+      border: 12px;
+      border-color: goldenrod;
+      border-top-style: none;
+      border-left-style: none;
+      border-right-style: none;
+      border-bottom-style: dotted;
+      margin-top: 10px;
+    }
+
+    /* Social Media Container */ 
+    .socialMediaContainer{
+      padding-bottom: .5rem;
+      margin: 1rem;
+    }
+  
+    /*social media icons*/
+    .socialMediaLink{    
+        margin: 6px;
+    }
     
+    /*social media icons Hover*/
+    .socialMedImage:hover{
+      -webkit-transform: scale(1.3); 
+      transform: scale(1.3); 
+    }
 
-  }
+    /* Nav Links Table */
+    .linksTable{
+      margin-top: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+      text-align: left;
+      border-collapse: collapse;
+      font-size: x-large;
+    }
+
+    /* Nav Icons */  
+    .navImg{
+      height: 25px;
+    }
+
+    /* Nav Icons Color */ 
+    .navImg { 
+      -webkit-filter: brightness(0) invert(1);
+      filter: brightness(0) invert(1);
+      padding-right: .5rem;
+    }
+    
+    /* Nav Links Hover */ 
+    .navLinks:hover{
+      background-color: #39A2DB;
+      border-radius: 10px;
+      color: black;    
+    }
+
+    /* Nav Links Font */ 
+    .navText{
+      font-size: xx-large;
+      color: honeydew;
+    }
+
+    /* Footer in Nav Bar */ 
+    .footerContent{
+      padding-top: 5rem;
+      text-align: center;
+      font-size: small;
+      color:grey;
+    }
+
+/* Main Container */ 
+
+    /* Main Container  */ 
+    .containerMain{
+      height: fit-content;
+      min-height: 952px;
+      width: 75%;
+      background-color:#E8F0F2;
+      float: right;
+      margin: 0;
+      padding: 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      font-family:'Montserrat', sans-serif;;
+      line-height: 1.7rem;
+      letter-spacing: .5px;
+    }
+
+    /* Main Container - longer pages */ 
+    .containerMainLong{
+      height: fit-content;
+      min-height: 1000px;
+      width: 75%;
+      background-color:#E8F0F2;
+      float: right;
+      margin: 0;
+      padding: 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      font-family:'Montserrat', sans-serif;;
+      line-height: 1.7rem;
+      letter-spacing: .5px;
+    }
+
+    /* Main Content  */
+    .contentMain{
+      width: 90%;
+      height: 85%;
+      margin:4rem auto;
+      background-color: #39A2DB;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Main Content  - longer pages*/
+    .contentMainLong{
+      width: 90%;
+      height: fit-content;
+      min-height: 800px;
+      margin:4rem auto;
+      background-color:#39A2DB;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+      
+    }
+
+
+/* Home Page */
+
+    /* Home Page background image */
+    .splashImg{
+      width: 100% ;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .splashContainer{
+      width: 100% ;
+      position: relative;
+      margin: 0px;
+      padding: 0px;
+
+    }
+
+    /* Home Page blurb */
+    .aboutMe{
+      position: absolute;
+      font-weight: bold;
+      bottom: 15rem;
+      left: 50%;
+      background-color: goldenrod;
+      width: 400px;
+      padding: 3rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    /* Home Page Rob */
+    .myName{
+      font-weight: bolder;
+    }
+
+    
+/* About Page*/
+
+      /* Carousel container */
+      .containerCarousel{
+        width: 60%;
+        margin: 3rem auto;
+        border-radius: 10px;
+        
+      }
+      .carouselContainer{
+        margin-top: 2rem;
+        box-shadow: 0 3px 1px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      }
+      
+      /* Carousel image */
+      .carouselImg{
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+      }
+
+     /* Resume container */
+      .resumeSubContainer{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        font-weight: bold;
+      }
+
+      /* Resume images */
+      .workLogo{
+        padding-right: 20px;
+            }
+           
+      /* Resume header */      
+      .resumeHeader{
+        font-weight: bold;
+      }
+
+      .captionText{
+        color:honeydew;
+        font-size: x-large;
+        font-weight:bold;
+        margin-bottom: 300px;
+      }
+
+/* Contact Page*/
+
+      /* Contact & Login header */
+      .formCard{
+      background-color:#053742;
+      margin-bottom: 2rem;
+      }
+
+      /* Contact & Login header text */
+      .formCardText{
+      color:honeydew;
+      margin: 3rem auto;
+      text-align: center;
+      font-size: x-large;
+      }
+
+      /*Contact Form*/
+      .contactForm{
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        background-color: #fff;
+        width: 50%;
+        margin: 3rem auto;
+        padding-top:50px;
+        padding-bottom:50px;
+      }
+  
+      /*Contact Caption*/
+      .contactDirect{
+        text-align: center;
+        font-weight: bold;
+      }
+  
+      /*Contact Caption my email*/
+      .myEmail{
+        font-size: large;
+        color: honeydew;
+      }
+
+      .field{
+        display: inline-block;
+        width: 20rem;
+        position: relative;
+        left: 30%; 
+      }
+      
+      .field:hover{
+        border: 2px solid #aaa;
+      }
+  
+
+/* Login Page*/
+
+      /*Header Error*/
+      .formCardErr{
+        background-color:white;
+      }
+
+      /*Header Error text*/
+      .formCardTextErr{
+        color: red;
+        font-weight: bold;
+        font-size: x-large;
+        text-align: center;
+      }
+
+      .loginButton{
+        margin-left: 6rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+      }
+  
+      .logoutButton{
+        
+        margin-left: 1rem;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+      }
+
+/* Listing Page*/
+
+    .userHeader{
+      padding-left: 2rem;
+      padding-top: 2rem;
+    }
+
+    .listingTable{
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      background-color: #fff;
+      width: 80%;
+      margin: 3rem auto;
+      padding-top:50px;
+      padding-bottom:50px;
+    }
+
+    .tableHead{
+      padding: 4rem;
+    }
+
+    .adminLoginText{
+      font-weight: bolder;
+      text-align: center;
+    }
+
+    .loginEmoji{
+      font-size: x-large;
+    }
+
+    /* On screens that are 1540px or less */
+@media screen and (max-width: 1540px) {
 
   .aboutMe{
     position: absolute;
     font-weight: bold;
-    bottom: 170px;
-    left: 710px;
+    bottom: 15rem;
+    left: 40%;
     background-color: goldenrod;
     width: 400px;
     padding: 3rem;
@@ -36,305 +384,25 @@ html,body,#root, .App {
     border-radius: 10px;
   }
 
-  .myName{
-    font-weight: bolder;
-
-  }
-
-
-.linksTable{
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  text-align: left;
-  border-collapse: collapse;
-  font-size: x-large;
-  }
-
-  .navImg{
-    height: 25px;
-    }
-
-  .robImg{
-    height: 220px;
-    }
-    
-
-  .sideBarNav{
-    height: 100%;
-    display: block;
-    background-color:#053742;
-    font-family:Arial, Helvetica, sans-serif ;
-    color: honeydew;
-    width:25%;
-    float: left;
-    text-align: center;
-    position: fixed;
-    font-family:'Montserrat', sans-serif;;
-  }
-
-  .navHeader1{
-    font-weight: bolder;
-    margin: 1rem;
-  }
-.aspiring{
-    font-size: smaller;
-  }
-
-   /* This is a single-line comment */ 
-   .navHr{
-    width: 35%;
-    border: 12px;
-    border-color: goldenrod;
-    border-top-style: none;
-    border-left-style: none;
-    border-right-style: none;
-    border-bottom-style: dotted;
-    margin-top: 10px;
-    }
-
-
-  .socialMediaContainer{
-    padding-bottom: .5rem;
-    margin: 1rem;
- }
-
- .socialMediaLink{    /*social media icons*/
-    margin: 6px;
- }
-
-
-  .socialMedImage:hover{
-    -webkit-transform: scale(1.3); 
-    transform: scale(1.3); 
-  }
-
-  .smiley:hover{
-    -webkit-transform: scale(1.3); 
-    transform: scale(1.3); 
-  }
-
-
-
   .linksTable{
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
     text-align: left;
     border-collapse: collapse;
-    font-size: x-large;
-    }
-
-    .navImg {  /* change the color of images in links*/
-      -webkit-filter: brightness(0) invert(1);
-      filter: brightness(0) invert(1);
-      padding-right: .5rem;
-    }
-  
-
-  .navLinks:hover{
-    background-color: gray;
-    }
-
-  .footerContent{
-    padding-top: 9.5rem;
-    font-size: small;
-    color:grey;
+    font-size: medium;
   }
 
-
-  .containerMain{
-    height: 100%;
-    min-height: 952px;
-    width: 75%;
-    background-color:#E8F0F2;
-    float: right;
-    margin: 0;
-    padding: 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    font-family:'Montserrat', sans-serif;;
-    line-height: 1.7rem;
-    letter-spacing: .5px;
-    
-    }
-
-    .contentMain{
-      width: 90%;
-      height: 85%;
-      margin:4rem auto;
-      background-color: #39A2DB;
-      position: relative;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-      }
-
-      .containerCarousel{
-        width: 60%;
-        margin: 3rem auto;
-
-      }
-
-      .workLogo{
-        padding-right: 20px;
-    }
-    
-
-    
-      .containerMainLong{
-        height: fit-content;
-        min-height: 1400px;
-        width: 75%;
-        background-color:#E8F0F2;
-        float: right;
-        margin: 0;
-        padding: 0;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        font-family:'Montserrat', sans-serif;;
-        line-height: 1.7rem;
-        letter-spacing: .5px;
-        
-        }
-
-     
-       .contentMainLong{
-          width: 90%;
-          height: fit-content;
-          min-height: 800px;
-          margin:4rem auto;
-          background-color:#39A2DB;
-          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-          position: relative;
-          }
+  .navText{
+    font-size: x-large;
+    color: honeydew;
+  }
   
-        .carouselContainer{
-          margin-top: 2rem;
-          
-        }
-
-        .carouselImg{
-          border-radius: 10px;
-          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-        }
-
-          .resumeSubContainer{
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            font-weight: bold;
-            
-    
-          }
-
-          .resumeHeader{
-            font-weight: bold;
-          }
-
-          .captionText{
-            color:honeydew;
-            font-size: x-large;
-            font-weight:bold;
-            margin-bottom: 300px;
-          }
-
-
-    .formCard{
-      background-color:#053742;
-      margin-bottom: 2rem;
-    }
-
-    .formCardText{
-      color:honeydew;
-      margin: 3rem auto;
-      text-align: center;
-      font-size: x-large;
-
-    }
-
-    .formCardErr{
-      background-color:red;
-      
-    }
-
-    .formCardTextErr{
-      color:honeydew;
-      text-align: center;
-
-    }
-    
-    .contactForm{
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-      border-radius: 10px;
-      background-color: #fff;
-      width: 50%;
-      margin: 3rem auto;
-      padding-top:50px;
-      padding-bottom:50px;
-    }
-
-    .contactDirect{
-      text-align: center;
-      font-weight: bold;
-    }
-
-    .myEmail{
-      font-size: large;
-      color: honeydew;
-    }
-
-
-    .loginButton{
-      margin-left: 6rem;
-      margin-top: 1rem;
-      margin-bottom: 4rem;
-    }
-
-    .logoutButton{
-      margin-left: 48rem;
-      margin-top: 2rem;
-      margin-bottom: 4rem;
-    }
-
-    .field{
-      display: inline-block;
-      width: 350px;
-      position: relative;
-      left: 30%; 
-    }
-    
-    .field:hover{
-      border: 2px solid #aaa;
-      
-
-    }
-
-   .userHeader{
-    padding-left: 2rem;
-    padding-top: 2rem;
-   }
-
-   .listingTable{
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    background-color: #fff;
-    width: 80%;
-    margin: 3rem auto;
-    padding-top:50px;
-    padding-bottom:50px;
-   }
-
-   .tableHead{
-    padding: 4rem;
-   }
-
-   .adminLoginText{
-
-    font-weight: bolder;
-    text-align: center;
-   }
-
-   .loginEmoji{
-     font-size: x-large;
-   }
+  .field{
+    display: inline-block;
+    width: 20rem;
+    position: relative;
+    left: 15%; 
+  }
+}

@@ -32,8 +32,9 @@ const Listings = () => {
             <div className="contentMainLong">
             <Row>
                 <h1 className="userHeader"><strong>Listings for user: {user}</strong></h1>
-                <Button onClick={logout} className="logoutButton" color="warning"><strong>Logout</strong></Button>
+                
             </Row>
+            <Button onClick={logout} className="logoutButton" color="warning"><strong>Logout</strong></Button>
             <hr className="mainHr" />
             <Table className="listingTable" responsive>
                 <thead>

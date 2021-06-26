@@ -37,7 +37,7 @@ const Login = () => {
         {!auth && 
             <Card className="text-white bg-primary my-5 py-4 text-center" className="formCardErr">
             <CardBody>
-                <CardText className="text-white m-0" className="formCardTextErr">Invalid credentials, please try again</CardText>
+                <CardText className="text-white m-0" className="formCardTextErr"> &#10071; Invalid credentials, please try again &#10071;</CardText>
             </CardBody>
         </Card>
         }

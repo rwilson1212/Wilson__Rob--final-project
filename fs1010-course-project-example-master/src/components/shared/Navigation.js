@@ -37,19 +37,18 @@ const Navigation = () => {
                     <table className="linksTable">
                     <tr>
                     <NavItem className="navLinks" >
-                        <td><NavLink style={{color:'honeydew'}} tag={RouteLink} to="/"><img className="navImg" src={home}></img>Home</NavLink></td>
+                        <td><NavLink style={{color:'honeydew'}} className="navText" tag={RouteLink} to="/"><img className="navImg" src={home}></img>Home</NavLink></td>
                     </NavItem>
                     </tr>
                     <NavItem className="navLinks">
-                        <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/about"><img className="navImg" src={file}></img>About</NavLink>
+                        <NavLink style={{color:'honeydew'}} className="navText" tag={RouteLink} to="/about"><img className="navImg" src={file}></img>About</NavLink>
                     </NavItem>
-                    
-                    
+                                       
                     <NavItem className="navLinks">
-                       <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/contact"><img className="navImg" src={envelope}></img>Contact Me</NavLink>
+                       <NavLink style={{color:'honeydew'}} className="navText" tag={RouteLink} to="/contact"><img className="navImg" src={envelope}></img>Contact Me</NavLink>
                     </NavItem>
-                    <NavItem className="navLinks">
-                        <NavLink style={{color:'honeydew'}} tag={RouteLink} to="/submissions"><img className="navImg" src={laptop}></img>Login</NavLink>
+                    <NavItem   className="navLinks">
+                        <NavLink style={{color:'honeydew'}} className="navText" tag={RouteLink} to="/submissions"><img className="navImg" src={laptop}></img>Login</NavLink>
                     </NavItem>
                     </table>
                 </Nav>
